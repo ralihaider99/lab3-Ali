@@ -1,0 +1,56 @@
+string1="James"
+print(string1[0:1] + string1[2:3]+string1[4:5])
+print(string1[0::2])
+assignment2_1 = "JhonDipPeta"
+x=5
+y="John"
+print(y)
+x=4
+x="Sally"
+print(x)
+x=str(3)
+y=int(3)
+z=float(3)
+print(x)
+print(z)
+x=5
+print(int(x))
+y='John'
+print(str(y))
+print(y)
+x=y=z= "orange"
+print(z)
+y="JhonDipPeta"
+print(y[4:7])
+s1 = "Ault"
+s2 = "Kelly"
+print(s1[0:2]+s2[0:5]+s1[2:4])
+p1 = "America"
+p2 = "Japan"
+print (p1[0:1]+p2[0:1]+p1[3:4]+p2[2:3]+p1[6:7]+p2[4:5])
+r1 = "jaMEs"
+print (r1[0:2]+r1[4:5]+r1[2:4])
+r1 = "jaMEs"
+print (r1[0:2]+r1[4:5]+r1[2:4])
+def count_letters_digits_symbols(word):
+    letters = 0
+    digits = 0
+    symbols = 0
+
+    for char in word:
+        if char.isalpha():
+            letters += 1
+        elif char.isdigit():
+            digits += 1
+        else:
+            symbols += 1
+
+    return letters, digits, symbols
+
+word = input("Enter a word: ")
+letter_count, digit_count, symbol_count = count_letters_digits_symbols(word)
+
+
+print(f"Letters: {letter_count}")
+print(f"Digits: {digit_count}")
+print(f"Special Symbols: {symbol_count}")
